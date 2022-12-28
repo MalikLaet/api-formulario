@@ -17,11 +17,11 @@ async function buscaEndereco(cep) {
         endereco.value = consultaCEPConvertida.logradouro;
         bairro.value = consultaCEPConvertida.bairro
 
-        console.log(consultaCEPConvertida);
+        // console.log(consultaCEPConvertida);
         return consultaCEPConvertida;
     } catch (erro) {
         mensagemErro.innerHTML =  `<p>CEP inválido. Tente novamente!</p>`
-        console.log(erro)
+        // console.log(erro)
     }
 }
 
